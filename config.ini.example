@@ -1,0 +1,22 @@
+# UniFi DNS Management Configuration
+# Copy this to config.ini and update with your values
+
+[unifi]
+hostname = 192.168.1.1
+api_key = YOUR_API_KEY_HERE
+site = default
+port = 443
+is_udm = true
+
+[dns_records]
+# Format: IP_ADDRESS = hostname,alias
+# The alias is optional and used for documentation
+192.168.1.10 = server.example.com,server
+192.168.1.20 = nas.example.com,nas
+10.0.1.100 = console.example.com,console
+
+[verification]
+# Skip hostnames that should be ignored during extra record detection
+# Only add domain apex records or system records you want to ignore
+skip_hostnames = 
+show_extra_records = true
