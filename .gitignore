@@ -27,3 +27,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Auto Claude data directory
+.auto-claude/
+.claude_settings.json
